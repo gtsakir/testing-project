@@ -15,4 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user/{id}', 'UserController@show');
+//Route::get('/user/{id}', 'UserController@show');
+
+Route::get('user/{name?}', function ($name = null) {
+    return $name;
+});
+
+Route::get('/about', 'AboutController@about');
+Route::get('/more-info', 'AboutController@info');

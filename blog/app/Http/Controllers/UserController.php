@@ -11,8 +11,11 @@ namespace App\Http\Controllers;
 
 class UserController
 {
+
     public function show($id)
     {
+//        global $totos ;
+
         return view('welcome', ['totos' => $id]);
     }
 }
