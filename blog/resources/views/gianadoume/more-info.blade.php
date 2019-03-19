@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    <h1>more infooooo</h1>
+    <h1>hello</h1>
+   <p>this is {{$name}}</p>
+    <p>lastname:{{$lastname}}</p>
 @endsection

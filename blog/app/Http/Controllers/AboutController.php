@@ -11,6 +11,10 @@ class AboutController extends Controller
     }
 
     public function info(){
-        return view('gianadoume.more-info');
+        $data = array(
+            'name' => 'gabriel',
+            'lastname' => 'tsakiridis'
+        );
+        return view('gianadoume.more-info')->with($data);
     }
 }

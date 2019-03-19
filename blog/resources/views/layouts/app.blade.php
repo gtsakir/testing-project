@@ -8,7 +8,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- Styles -->
     <style>
         html, body {
@@ -64,6 +64,7 @@
     </style>
 </head>
 <body>
+@include('incorporated.navbar')
 <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
         <div class="top-right links">
