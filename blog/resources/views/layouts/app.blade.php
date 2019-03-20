@@ -81,8 +81,8 @@
     @endif
 
     <div class="content">
-        <div class="title m-b-md">
-            @yield('title')
+        <div class="">
+            @yield('content')
         </div>
 
         <div class="links">

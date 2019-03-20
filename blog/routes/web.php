@@ -23,3 +23,4 @@ Route::get('user/{name?}', function ($name = null) {
 
 Route::get('/about', 'AboutController@about');
 Route::get('/more-info', 'AboutController@info');
+Route::resource('posts', 'PostsController');
