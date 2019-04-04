@@ -1,10 +1,10 @@
- <?php
+<?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostsTable extends Migration
+class AddMultipleTables extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,19 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('dates', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
+            $table->string('date');
             $table->mediumText('body');
             $table->timestamps();
         });
 
-
+        Schema::create('times', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('time');
+            $table->mediumText('body');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -30,6 +35,7 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::drop('times');
+        Schema::drop('dates');
     }
 }

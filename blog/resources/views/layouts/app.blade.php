@@ -79,7 +79,7 @@
             @endauth
         </div>
     @endif
-
+    <h1>@yield('title')</h1>
     <div class="content">
         <div class="">
             @yield('content')

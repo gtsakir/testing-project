@@ -1,8 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="laravel" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" activateToolWindowBeforeRun="false" document_root="$PROJECT_DIR$" port="8000" router_script="$PROJECT_DIR$/server.php" use_router_script="true">
     <CommandLine parameters="-dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=9000 -dxdebug.remote_host=127.0.0.1 " />
-    <method v="2">
-      <option name="LaunchBrowser.Before.Run" url="localhost:8000" withDebugger="true" />
-    </method>
+    <method v="2" />
   </configuration>
 </component>
